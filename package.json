@@ -20,5 +20,9 @@
   "homepage": "https://github.com/KekaLopo/Teste-UI-EBAC#readme",
   "devDependencies": {
     "cypress": "^10.9.0"
+  },
+  "dependencies": {
+    "@faker-js/faker": "^7.5.0",
+    "faker": "^6.6.6"
   }
 }
