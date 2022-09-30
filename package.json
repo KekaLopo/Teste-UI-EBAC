@@ -1,0 +1,24 @@
+{
+  "name": "teste-ui-ebac",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "cy:run": "cypress run",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KekaLopo/Teste-UI-EBAC.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KekaLopo/Teste-UI-EBAC/issues"
+  },
+  "homepage": "https://github.com/KekaLopo/Teste-UI-EBAC#readme",
+  "devDependencies": {
+    "cypress": "^10.9.0"
+  }
+}
