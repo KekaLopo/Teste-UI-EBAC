@@ -3,7 +3,7 @@ const perfil = require('../fixtures/example.json') // testando fixture com varia
 
     context('Funcionalidade Login', ()=>{
         it('Deve fazer login com sucesso',()=>{
-            cy.visit('http://lojaebac.ebaconline.art.br/minha-conta/')
+            cy.visit('minha-conta')
             cy.get('#username').type('aluno_ebac@teste.com')
             cy.get('#password').type('teste@teste.com')
             cy.get('.woocommerce-form > .button').click()
@@ -14,7 +14,7 @@ const perfil = require('../fixtures/example.json') // testando fixture com varia
         //testanto fixture acessando pelo arquivo
         it.only('Deve fazer Login com sucesso - Usando Fixture',()=>{
             cy.fixture('example').then(dados => {
-                cy.visit('http://lojaebac.ebaconline.art.br/minha-conta/')
+                cy.visit('minha-conta')
                 cy.get('#username').type(dados.usuario)
                 cy.get('#password').type(dados.senha)
                 cy.get('.woocommerce-form > .button').click()
@@ -25,7 +25,7 @@ const perfil = require('../fixtures/example.json') // testando fixture com varia
 
         it('Deve exibir uma mensagem de erro ao inserir usuario invalido ', (    
         )=>{
-            cy.visit('http://lojaebac.ebaconline.art.br/minha-conta/')
+            cy.visit('minha-conta')
             cy.get('#username').type(perfil.usuario+a)
             cy.get('#password').type(perfil.senha)
             cy.get('.woocommerce-form > .button').click()
